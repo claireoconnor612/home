@@ -64,23 +64,26 @@ main {
   margin: 4rem auto;
 }
 
-/* Flex layout for bio section */
-#intro {
+.intro-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
 }
 
-/* Bio text */
-#intro p {
+/* This prevents text from taking full width */
+.bio {
   flex: 1;
-  text-align: left;
 }
 
-/* Profile image on right */
+/* Keeps image on the right */
 .profile-pic {
-  max-width: 200px;
+  width: 180px;
+  height: auto;
   border-radius: 50%;
 }
 
