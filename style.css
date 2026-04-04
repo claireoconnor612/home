@@ -31,7 +31,10 @@ header p {
   font-size: 1rem;
   color: #555;
 }
-
+/* Name on the LEFT */
+header h1 {
+  order: 0;
+}
 /* Navigation now on top-left */
 nav ul {
   display: flex;
@@ -40,7 +43,7 @@ nav ul {
 }
 
 nav {
-  order: -1; /* Moves nav to the left side */
+  order: 1; /* Moves nav to the left side */
 }
 
 nav a {
