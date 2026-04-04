@@ -1,5 +1,3 @@
-re’s how to update your style.css:
-Updated style.css
 /* Reset default styles */
 * {
   margin: 0;
@@ -10,21 +8,23 @@ Updated style.css
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #FFFAF0; /* Updated background color */
   color: #222;
-  padding: 0 3rem; /* Increased horizontal margins */
+  padding: 0 3rem;
 }
 
+/* Header layout */
 header {
   display: flex;
-  justify-content: space-between; /* Nav right, name left */
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
 }
 
+/* Name styling */
 header h1 {
   font-size: 2.5rem;
-  color: #0077cc;
+  color: #4682B4; /* Updated name color */
 }
 
 header p {
@@ -32,11 +32,15 @@ header p {
   color: #555;
 }
 
-/* Navigation on the upper-right */
+/* Navigation now on top-left */
 nav ul {
   display: flex;
   list-style: none;
   gap: 1.5rem;
+}
+
+nav {
+  order: -1; /* Moves nav to the left side */
 }
 
 nav a {
@@ -46,23 +50,36 @@ nav a {
 }
 
 nav a:hover {
-  color: #0077cc;
+  color: #4682B4;
 }
 
-/* Center bio and picture */
+/* Main layout: bio + image side-by-side */
 main {
-  max-width: 700px; /* slightly narrower for large margins */
-  margin: 4rem auto; /* centers vertically with spacing above */
-  text-align: center;
+  max-width: 900px;
+  margin: 4rem auto;
 }
 
+/* Flex layout for bio section */
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Bio text */
+#intro p {
+  flex: 1;
+  text-align: left;
+}
+
+/* Profile image on right */
 .profile-pic {
-  max-width: 50px;
+  max-width: 200px;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto 1.5rem auto;
 }
 
+/* Sections */
 section {
   margin-bottom: 3rem;
 }
@@ -70,20 +87,20 @@ section {
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #0077cc;
+  color: #4682B4;
 }
 
 ul {
   list-style: disc inside;
   padding-left: 1rem;
-  text-align: left; /* keeps lists aligned left for readability */
 }
 
 a {
-  color: #0077cc;
+  color: #4682B4;
   text-decoration: underline;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem 0;
@@ -92,20 +109,32 @@ footer {
 }
 
 /* Responsive for mobile */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   body {
     padding: 0 1.5rem;
   }
+
   header {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
+
+  #intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #intro p {
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-top: 1rem;
+  }
+
   nav ul {
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  header h1 {
-    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
