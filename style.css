@@ -21,6 +21,11 @@ header {
   padding: 2rem 0;
 }
 
+/* Name on the LEFT */
+header h1 {
+  order: 0;
+}
+
 /* Name styling */
 header h1 {
   font-size: 2.5rem;
@@ -31,10 +36,7 @@ header p {
   font-size: 1rem;
   color: #555;
 }
-/* Name on the LEFT */
-header h1 {
-  order: 0;
-}
+
 /* Navigation now on top-left */
 nav ul {
   display: flex;
