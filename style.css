@@ -13,99 +13,93 @@ body {
   padding: 0 3rem;
 }
 
-/* Header layout */
-header {
+/* Header styling (separate section) */
+.top-header {
+  background-color: white;
+  padding: 1.5rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
 }
 
-/* Name on the LEFT */
-header h1 {
-  order: 0;
+/* Name */
+.top-header h1 {
+  color: #4682B4;
+  font-size: 2rem;
 }
 
-/* Name styling */
-header h1 {
-  font-size: 2.5rem;
-  color: #4682B4; /* Updated name color */
-}
-
-header p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Navigation now on top-left */
-nav ul {
+/* Top-right nav */
+.top-nav ul {
   display: flex;
-  list-style: none;
   gap: 1.5rem;
+  list-style: none;
 }
 
-nav {
-  order: 1; /* Moves nav to the left side */
-}
-
-nav a {
+.top-nav a {
   text-decoration: none;
   color: #222;
-  font-weight: bold;
+  font-weight: 500;
 }
 
-nav a:hover {
-  color: #4682B4;
-}
-
-/* Main layout: bio + image side-by-side */
-main {
-  max-width: 900px;
-  margin: 4rem auto;
-}
-
+/* White card */
 .intro-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-
   background-color: white;
   padding: 2rem;
   border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-/* This prevents text from taking full width */
+/* Image LEFT now */
+.profile-pic {
+  width: 180px;
+  border-radius: 50%;
+}
+
+/* Bio */
 .bio {
   flex: 1;
 }
 
-/* Keeps image on the right */
-.profile-pic {
-  width: 180px;
-  height: auto;
-  border-radius: 50%;
+/* Links inside bio */
+.bio-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }
 
-/* Sections */
-section {
-  margin-bottom: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.bio-links a {
+  text-decoration: none;
   color: #4682B4;
+  font-weight: 500;
 }
 
-ul {
-  list-style: disc inside;
-  padding-left: 1rem;
+/* Buttons under card */
+.main-buttons {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-a {
-  color: #4682B4;
-  text-decoration: underline;
+.button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  background-color: #4682B4;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button.secondary {
+  background-color: #777;
+}
+
+/* Body background (keep your soft tone) */
+body {
+  background-color: #F2EFEF;
 }
 
 /* Footer */
