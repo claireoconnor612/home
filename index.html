@@ -1,90 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Home page of Claire O'Connor, PhD student and SLP.">
-<title>Claire O'Connor - Home</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claire O'Connor</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="top-header">
-  <h1>Claire O'Connor</h1>
 
-  <!-- Top-right navigation -->
-  <nav class="top-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Community Outreach</a></li>
-      <li><a href="#">Therapy Activities</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <div class="logo">Claire O’Connor</div>
+      <ul class="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#work">Current Work</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-  <section id="intro">
-    <div class="intro-card">
-
-      <!-- IMAGE (now on LEFT) -->
-      <img src="FullSizeRender.jpeg" alt="Claire O'Connor" class="profile-pic">
-
-      <!-- BIO + LINKS -->
-      <div class="bio">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Claire O’Connor</h1>
+        <p class="subtitle">PhD Student | Speech-Language Pathology</p>
         <p>
-          Hello! I’m Claire, a PhD student focused on research in communication disorders and technology-assisted interventions. My work bridges research and clinical practice as a licensed Speech-Language Pathologist.
+          I study AAC, interaction, and embodied communication in neurodiverse populations.
         </p>
-
-        <!-- Navigation INSIDE white box -->
-        <div class="bio-links">
-          <a href="#CV_4.2026.pdf">CV</a>
-          <a href="https://scholar.google.com/citations?user=1RlZTdcAAAAJ&hl=en">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/claireoconnor612/">LinkedIn</a>
-          <a href="mailto:coconno5@umd.edu">Email</a>
+        <div class="hero-buttons">
+          <a href="#updates" class="button-outline">Recent Updates</a>
+          <a href="cv.pdf" class="button-outline">View CV</a>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- Buttons under white box -->
-  <div class="main-buttons">
-    <a href="#publications" class="button">Check Out Publications</a>
-    <a href="#" class="button secondary">Updates</a>
-  </div>
-</main>
+  <!-- Updates -->
+  <section id="updates" class="updates-section">
+    <div class="container">
+      <h2>Updates</h2>
+      <div class="updates-list">
+        <p><span class="date">April 2026</span> — Presented at [Conference Name]</p>
+        <p><span class="date">March 2026</span> — Article accepted in [Journal Name]</p>
+        <p><span class="date">February 2026</span> — Started project on AAC and gesture</p>
+        <p><span class="date">January 2026</span> — Collaborating with [Lab Name]</p>
+      </div>
+      <a href="updates.html" class="updates-link">View all updates →</a>
+    </div>
+  </section>
 
-  <section id="publications" class="publications-section">
-  <h2>Publications</h2>
+  <!-- Research -->
+  <section id="research" class="content-section">
+    <div class="container">
+      <h2>Research Focus</h2>
+      <p>
+        My work explores how language, gesture, and AAC tools shape communication in real interactions.
+        I focus on neurodiverse communication and accessible, embodied approaches to interaction.
+      </p>
+    </div>
+  </section>
 
-  <div class="pub-card">
-    <p>Tobias M Weinberg, <strong> Claire O’Connor, </strong> Ricardo E. Gonzalez Penuela, Stephanie
-Valencia, and Thijs Roumen. 2025. One Does Not Simply ‘Mm-hmm’: Ex-
-ploring Backchanneling in the AAC Micro-Culture. <em>In The 27th International
-ACM SIGACCESS Conference on Computers and Accessibility (ASSETS ’25),
-October 26–29, 2025, Denver, CO, USA. ACM, New York, NY, USA, 14 pages. <a href="#https://dl.acm.org/doi/full/10.1145/3663547.3746381">https://doi.org/10.1145/3663547.3746381</a></em>.</p>
-  </div>
+  <!-- Current Work -->
+  <section id="work" class="content-section alt-bg">
+    <div class="container">
+      <h2>Current Work</h2>
+      <ul class="work-list">
+        <li>Investigating gesture and AAC use in conversational settings</li>
+        <li>Exploring embodied communication in neurodiverse interactions</li>
+        <li>Developing accessible approaches to communication analysis</li>
+      </ul>
+    </div>
+  </section>
 
-  <div class="pub-card">
-    <p>Yao Du, <strong>Claire O'Connor,</strong> Ginna Byun, Lauren H. Kim, Siona Amrgousian,
-and Priyal Vora. 2024. Voice Assistive Technology for Activities of Daily
-Living: Developing an Alexa Telehealth Training for Adults with Cognitive-
-Communication Disorders. <em>In Proceedings of the CHI Conference on Human
-Factors in Computing Systems (CHI ’24), May 11–16, 2024, Honolulu, HI,
-USA. ACM, New York, NY, USA, 15 pages. <a href="#https://doi.org/10.1145/3613904.
-3642788">https://doi.org/10.1145/3613904.
-3642788</a></em>.</p>
-  </div>
+  <!-- Publications -->
+  <section id="publications" class="content-section">
+    <div class="container">
+      <h2>Selected Publications</h2>
+      <div class="pub-list">
+        <p><strong>Author, A.</strong> (2026). Title of article. <em>Journal Name</em>.</p>
+        <p><strong>Author, A.</strong> (2025). Another publication title. <em>Journal Name</em>.</p>
+        <p><strong>Author, A.</strong> (2024). Research article title. <em>Journal Name</em>.</p>
+      </div>
+      <a href="publications.html" class="updates-link">View all publications →</a>
+    </div>
+  </section>
 
-  <div class="pub-card">
-    <p><strong>Claire O'Connor,</strong>, Lauren H. Kim, Ginna Byun, and Priyal Vora. 2023. Designing Voice-Assisted Tech-
-nology (VAT) Training for Activities of Daily Living (ADLs) for Adults with
-Cognitive-Communication Needs (CCNs) at Home.<em>In The 25th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS ’23),
-October 22–25, 2023, New York, NY, USA. ACM, New York, NY, USA, 16 pages. <a href="#https://doi.org/10.1145/3597638.3615656">https://doi.org/10.1145/3597638.3615656</a></em>.</p>
-  </div>
+  <!-- Contact -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: your.email@university.edu</p>
+      <p>
+        <a href="#">Google Scholar</a> |
+        <a href="#">LinkedIn</a> |
+        <a href="#">CV</a>
+      </p>
+    </div>
+  </footer>
 
-</section>
-<footer>
-<p>&copy; 2026 Claire O'Connor</p>
-</footer>
 </body>
 </html>
