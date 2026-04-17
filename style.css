@@ -1,163 +1,132 @@
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Helvetica Neue', 'Noto Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #B0C4DE; /* Updated background color */
+  margin: 0;
+  font-family: Arial, sans-serif;
   color: #222;
-  padding: 0 3rem;
+  background: #ffffff;
+  line-height: 1.6;
 }
 
-/* Header styling (separate section) */
-.top-header {
-  background-color: white;
-  padding: 1.5rem 3rem;
+.container {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 
-/* Name */
-.top-header h1 {
-  color: #4682B4;
-  font-size: 2rem;
+.logo {
+  font-weight: 600;
 }
 
-/* Top-right nav */
-.top-nav ul {
-  display: flex;
-  gap: 1.5rem;
+.nav-links {
   list-style: none;
-}
-
-.top-nav a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
-}
-
-/* White card */
-.intro-card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 12px;
   display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 20px;
 }
 
-/* Image LEFT now */
-.profile-pic {
-  width: 180px;
-  border-radius: 50%;
-}
-
-/* Bio */
-.bio {
-  flex: 1;
-}
-
-/* Links inside bio */
-.bio-links {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1.2rem;
-  flex-wrap: wrap;
-}
-
-.bio-links a {
+.nav-links a {
   text-decoration: none;
-  color: #4682B4;
-  font-weight: 500;
-}
-
-/* Buttons under card */
-.main-buttons {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.button {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.7rem 1.4rem;
-  background-color: #4682B4;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-.button.secondary {
-  background-color: #777;
-}
-
-.publications-section {
-  margin: 3rem auto;
-  max-width: 800px;
-  text-align: center;
-}
-
-.publications-section h2 {
-  margin-bottom: 1.5rem;
   color: #333;
 }
 
-/* Each publication box */
-.pub-card {
-  background-color: white;
-  padding: 1.2rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  text-align: left;
+/* Hero */
+.hero {
+  padding: 100px 20px 70px;
 }
 
-/* Body background (keep your soft tone) */
-body {
-  background-color: #B0C4DE;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.button-outline {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 16px;
+  border: 1px solid #bbb;
+  text-decoration: none;
+  color: #333;
+}
+
+.button-outline:hover {
+  border-color: #333;
+}
+
+/* Sections */
+.content-section,
+.updates-section {
+  padding: 70px 20px;
+}
+
+.alt-bg,
+.updates-section {
+  background-color: #f7f5f2;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.work-list {
+  padding-left: 20px;
+}
+
+.pub-list p,
+.updates-list p {
+  margin-bottom: 12px;
+}
+
+.date {
+  font-weight: 600;
+}
+
+.updates-link {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+.updates-link:hover {
+  border-color: #333;
 }
 
 /* Footer */
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  color: #555;
-  font-size: 0.9rem;
+.site-footer {
+  padding: 60px 20px;
+  border-top: 1px solid #eee;
 }
 
-/* Responsive for mobile */
-@media (max-width: 700px) {
-  body {
-    padding: 0 1.5rem;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  #intro {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #intro p {
-    text-align: center;
-  }
-
-  .profile-pic {
-    margin-top: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
+.site-footer a {
+  color: #333;
+  text-decoration: none;
 }
-
